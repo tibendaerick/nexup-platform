@@ -4,7 +4,7 @@
 
 > **Digital Infrastructure & AI Orchestration for Enterprise and Local Market Transformation.**
 
-NexUp Tech Group engineers high-performance digital infrastructure, scalable AI orchestration frameworks, and bespoke enterprise systems designed to eliminate operational friction and accelerate digital maturity. Based in Hoima City, Uganda, we bridge the gap between advanced computing and local market realities, transforming logistics, hospitality, and retail sectors through precise technical execution.
+NexUp Tech Group engineers high-performance digital infrastructure, scalable AI orchestration frameworks, and bespoke enterprise systems designed to eliminate operational friction and accelerate digital maturity. Based in Mubende and visible neighbouring districts e.g Hoima City, Uganda, we bridge the gap between advanced computing and local market realities, transforming logistics, hospitality, and retail sectors through precise technical execution.
 
 ---
 
