@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="NexUp Technology Group — digital infrastructure for Ugandan businesses. Logistics routing, school management, mobile money, and market systems built for Hoima and Mubende.">
+<meta name="theme-color" content="#0C0F14">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; font-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+<title>NexUp Technology Group — Digital Infrastructure for Ugandan Business</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230C0F14'/%3E%3Cpath d='M9 22V10l14 12V10' stroke='%23F2A93B' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="#top" aria-label="NexUp Technology Group home">
+      <svg class="wordmark-mark" width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect width="32" height="32" rx="7" fill="var(--accent)"/>
+        <path d="M9 22V10l14 12V10" stroke="#0C0F14" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>NexUp<span class="wordmark-sub">Technology Group</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#products">Products</a>
+      <a href="#calculator">ROI Calculator</a>
+      <a href="#consult">Consult</a>
+    </nav>
+    <a class="btn btn-ghost header-cta" id="waHeaderLink" href="#" target="_blank" rel="noopener">
+      Chat on WhatsApp
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Hoima City &amp; Mubende, Uganda</p>
+        <h1>Infrastructure for businesses that run on mobile money, not paperwork.</h1>
+        <p class="hero-lead">
+          NexUp builds the systems Ugandan SMEs actually use daily — routing,
+          school fees, USSD, and vendor listings — designed for patchy data
+          and busy front counters, not boardrooms.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" id="waHeroLink" href="#" target="_blank" rel="noopener">Start a consultation</a>
+          <a class="btn btn-outline" href="#products">See what we build</a>
+        </div>
+      </div>
+
+      <div class="hero-device" aria-hidden="true">
+        <div class="device-frame">
+          <div class="device-notch"></div>
+          <div class="device-screen">
+            <p class="device-carrier">MTN UGANDA</p>
+            <p class="device-code" id="ussdCode">*165*4#</p>
+            <div class="device-menu" id="ussdMenu"></div>
+            <p class="device-cursor"><span>▮</span></p>
+          </div>
+        </div>
+        <p class="device-caption">NextGoal running over USSD — no smartphone or data bundle required.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS ============ -->
+  <section class="products" id="products">
+    <div class="wrap">
+      <p class="eyebrow">What we run</p>
+      <h2>Four systems, one operator.</h2>
+      <div class="product-grid">
+
+        <article class="product-card">
+          <p class="product-tag">RR</p>
+          <h3>RightRoute</h3>
+          <p>Delivery and logistics routing built for boda and van fleets moving goods across town — fewer missed drops, shorter routes.</p>
+        </article>
+
+        <article class="product-card">
+          <p class="product-tag">SB</p>
+          <h3>SchoolBridge</h3>
+          <p>School management for enrollment, attendance, and records — one register instead of a stack of exercise books.</p>
+        </article>
+
+        <article class="product-card">
+          <p class="product-tag">NG</p>
+          <h3>NextGoal</h3>
+          <p>Mobile money and school-fee collection, USSD-capable — parents pay from any phone, no app or smartphone required.</p>
+        </article>
+
+        <article class="product-card">
+          <p class="product-tag">DL</p>
+          <h3>DukaLink</h3>
+          <p>Market vendor listings that put stalls and shops in front of buyers searching nearby — visibility without a shopfront.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ROI CALCULATOR ============ -->
+  <section class="calculator" id="calculator">
+    <div class="wrap calc-grid">
+      <div class="calc-copy">
+        <p class="eyebrow">Estimate your case</p>
+        <h2>What manual work is actually costing you.</h2>
+        <p>
+          Adjust the numbers to match your business. This is a rough,
+          editable estimate — not a quote — meant to show where automation
+          is worth exploring first.
+        </p>
+
+        <div class="calc-controls">
+          <label class="calc-field">
+            <span>Manual transactions per day <em>(orders, bookings, entries)</em></span>
+            <input type="number" id="inputOrders" min="0" step="1" value="40" inputmode="numeric">
+          </label>
+
+          <label class="calc-field">
+            <span>Minutes spent per transaction, done by hand</span>
+            <input type="number" id="inputMinutes" min="0" step="0.5" value="6" inputmode="decimal">
+          </label>
+
+          <label class="calc-field">
+            <span>Staff cost per hour (UGX)</span>
+            <input type="number" id="inputCost" min="0" step="500" value="4000" inputmode="numeric">
+          </label>
+
+          <label class="calc-field calc-field-range">
+            <span>Share of that work automation could remove: <strong id="automationPct">70%</strong></span>
+            <input type="range" id="inputAutomation" min="10" max="95" step="5" value="70">
+          </label>
+        </div>
+      </div>
+
+      <div class="calc-result" aria-live="polite">
+        <p class="calc-result-label">Estimated monthly impact</p>
+        <p class="calc-result-figure"><span id="resultHours">0</span><span class="calc-unit">hrs saved</span></p>
+        <p class="calc-result-figure calc-result-secondary"><span id="resultMoney">UGX 0</span><span class="calc-unit">in staff time</span></p>
+        <div class="calc-divider"></div>
+        <p class="calc-note">Based on <span id="summaryOrders">40</span> transactions/day × <span id="summaryMinutes">6</span> min ×
+        <span id="summaryPct">70%</span> automatable, over 30 days. Illustrative only — actual results depend on your workflow.</p>
+        <a class="btn btn-primary calc-cta" id="waCalcLink" href="#" target="_blank" rel="noopener">Talk through these numbers</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONSULTATION PATHS ============ -->
+  <section class="consult" id="consult">
+    <div class="wrap">
+      <p class="eyebrow">Ways to start</p>
+      <h2>Pick the depth that matches where you are.</h2>
+
+      <div class="path-grid">
+        <article class="path-card">
+          <h3>Quick Chat</h3>
+          <p class="path-desc">15 minutes on WhatsApp to see if there's a fit before anything is scoped.</p>
+          <ul class="path-list">
+            <li>No cost, no commitment</li>
+            <li>Good if you're not sure what you need yet</li>
+          </ul>
+          <a class="btn btn-outline path-cta" id="waPath1" href="#" target="_blank" rel="noopener">Message us</a>
+        </article>
+
+        <article class="path-card path-card-featured">
+          <p class="path-badge">Most common</p>
+          <h3>Scoped Project</h3>
+          <p class="path-desc">A defined build — one system, one price, one timeline. Good for a single clear need.</p>
+          <ul class="path-list">
+            <li>Fixed scope and fixed quote upfront</li>
+            <li>Typical for a single product like NextGoal or SchoolBridge</li>
+          </ul>
+          <a class="btn btn-primary path-cta" id="waPath2" href="#" target="_blank" rel="noopener">Request a quote</a>
+        </article>
+
+        <article class="path-card">
+          <h3>Ongoing Partner</h3>
+          <p class="path-desc">NexUp as your standing infrastructure team across multiple systems and time.</p>
+          <ul class="path-list">
+            <li>Monthly retainer, ongoing support</li>
+            <li>Best once you're running more than one system</li>
+          </ul>
+          <a class="btn btn-outline path-cta" id="waPath3" href="#" target="_blank" rel="noopener">Discuss a retainer</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <p class="footer-name">NexUp Technology Group</p>
+      <p class="footer-loc">Hoima City &amp; Mubende, Uganda</p>
+    </div>
+    <a class="btn btn-primary" id="waFooterLink" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </div>
+  <div class="wrap footer-legal">
+    <p>© <span id="year">2026</span> NexUp Technology Group. All systems built and supported locally. Built with love for digital enhancement in Uganda.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
